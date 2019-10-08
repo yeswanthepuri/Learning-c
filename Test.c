@@ -1,9 +1,12 @@
 #include <stdio.h>
+
 int main()
 {
-    // printf() displays the string inside quotation
-    int i;
-    printf("Hello, Krithvika!");
-    scanf("%d",&i);
-    return i;
+    int *ptr , q;
+    printf("Hello, Krithvika!\n");
+    scanf("%d",&q);
+    ptr=&q;
+    printf("%d",sizeof(q));
+    printf("%d",*ptr);
+    return q;
 }
