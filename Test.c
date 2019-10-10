@@ -1,11 +1,10 @@
 #include <stdio.h>
 //Any thing out of main should be defined as extern
-extern int q;
 extern float a,b;
 int main()
 {
     //declaring of float
-    float result,a, b;;
+    float result,a, b;
     //declaring of int and pointer
     int *ptr ,q;
     //Assignment
@@ -14,10 +13,14 @@ int main()
     //%f to print float
     printf("Hello, Krithvika! your account balance is %f billion\n",a+b);
     //%d to scan int
-    scanf("please enter your withdraw intrest: %d", &q);
+    scanf(" %d", &q);
     //Assignment of address of q to the pointer
-    *ptr=&q;
+   ptr = &q;
     printf("Size of Q: %lu\n", sizeof(q));
-    printf("Pointer of Q: %d\n", *ptr);
+    printf("Pointer of Q: %p\n", *ptr);
+    int num;
+    scanf("%4d",&num);
+    printf("%d",num);
+
     return q;
 }
